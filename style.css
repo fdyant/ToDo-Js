@@ -21,7 +21,7 @@ p {
 }
 header,
 form{
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ form button:hover {
     align-items: center;
 }
 .todo-list {
-    min-width: 30%;
+    min-width: 20%;
     list-style: none;
 }
 .todo {
@@ -127,4 +127,11 @@ select{
 .select:hover::after {
     background-color: #d88771;
     color: #8b2508;
+}
+
+@media only screen and (max-width:550px){
+    form input{
+        display:flex;
+        width:fit-content;
+    }
 }
